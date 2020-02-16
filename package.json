@@ -1,0 +1,31 @@
+{
+  "name": "react-ssr-js",
+  "version": "0.0.0",
+  "description": "A fresh new Architect project!",
+  "scripts": {
+    "start": "npm run build:fullstack && npx sandbox",
+    "build:client": "rimraf dist && webpack --config webpack.config.js",
+    "build:server": "rimraf src/views/dist && npx babel src/views --out-dir src/views/dist ",
+    "build:fullstack": "npm run build:client && npm run build:server",
+    "rebuild:client": "npm run build:client && npx sandbox",
+    "rebuild:server": "npm run build:server && npx sandbox"
+  },
+  "devDependencies": {
+    "@architect/architect": "^6.2.0",
+    "@architect/sandbox": "^1.7.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
