@@ -1,5 +1,5 @@
 let arc = require('@architect/functions')
-const {render} = require('@architect/views/dist/render')
+const {render} = require('@architect/views/dist/server.render')
 
 async function app(req) {
     return {

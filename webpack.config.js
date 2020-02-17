@@ -6,7 +6,7 @@ module.exports = {
       colors: true
   },
   // devtool: 'source-map',
-  entry: './src/views/index.jsx', 
+  entry: './src/views/client.render.jsx', 
   target: 'web',         
   output: {                 
     path: path.resolve(__dirname, 'dist'),          
